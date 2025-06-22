@@ -41,8 +41,8 @@ public class Main {
 
 
             for (int i = 0; i < jsonArray.size(); i++) {
-
-                Employee employee = gson.fromJson((String) jsonArray.get(i), listType);
+                System.out.println(jsonArray.get (i).toString());
+                Employee employee = gson.fromJson(jsonArray.get(i).toString(), listType);
                 employeeList.add(employee);
             }
 
